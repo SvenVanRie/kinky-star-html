@@ -1,0 +1,59 @@
+body {
+	background-color: #000000;
+	background-image: url('../../assets/img/gf_bg_hd.jpg');
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-family: 'Arbutus', cursive;
+    text-shadow: -1px 0 rgba(255, 165, 0, 0.2), 0 1px rgba(255, 165, 0, 0.2), 1px 0 rgba(255, 165, 0, 0.2), 0 -1px rgba(255, 165, 0, 0.2);
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3 {
+	height: 100px;
+}
+
+.col-sm-2, .col-sm-3 {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.col-sm-3 {
+	color: rgb(255, 165, 0);
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.col-sm-3.th {
+	color: #000;
+}
+
+.col-sm-12 span {
+	cursor: pointer;
+}
+
+.th {
+	background-color: rgba(255, 165, 0, 0.4);
+	text-shadow: -1px 0 rgba(255, 255, 255, 0.2), 0 1px rgba(255, 255, 255, 0.2), 1px 0 rgba(255, 255, 255, 0.2), 0 -1px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		background-image: url('../../assets/img/gf_bg_portrait.jpg');
+	}
+
+	.col-sm-1, .col-sm-2, .col-sm-3 {
+		height: inherit;
+	}
+
+	.col-sm-1.th {
+		height: 30px;
+	}
+
+	.col-xs-6 {
+		height: 30px;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+
+	.col-xs-6.th {
+		background-color: rgba(255, 165, 0, 0.4);
+		color: #000;
+	}
+}
