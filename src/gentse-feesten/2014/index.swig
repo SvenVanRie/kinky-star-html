@@ -8,7 +8,9 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-1 hidden-xs th"><a href="{{ siteUrl }}"><span class="glyphicon glyphicon-home"></span></a></div>
+    <div class="col-sm-1 hidden-xs th">
+    	<a href="{{ siteUrl }}"><span class="glyphicon glyphicon-home"></span></a>
+    </div>
     <div class="col-sm-2 hidden-xs th">18u</div>
     <div class="col-sm-2 hidden-xs th">22u</div>
     <div class="col-sm-2 hidden-xs th">24u</div>
@@ -16,7 +18,7 @@
     <div class="col-sm-3 hidden-xs th">DJ</div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="17">
     <div class="col-sm-1 th">17 DO</div>
     <div class="col-sm-2"> {% set data = { id: 1 } %}
       
@@ -44,7 +46,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="18">
     <div class="col-sm-1 th">18 VR</div>
     <div class="col-sm-2"> {% set data = { id: 6 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -78,7 +80,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="19">
     <div class="col-sm-1 th">19 ZA</div>
     <div class="col-sm-2"> {% set data = { id: 11 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -112,7 +114,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="20">
     <div class="col-sm-1 th">20 ZO</div>
     <div class="col-sm-2"> {% set data = { id: 16 } %}
       
@@ -143,7 +145,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="21">
     <div class="col-sm-1 th">21 MA</div>
     <div class="col-sm-2"> {% set data = { id: 21} %}
     <div class="col-xs-6 visible-xs th">18u</div>
@@ -172,12 +174,12 @@
     <div class="col-sm-3"> {% set data = { id: 25 } %}
 	    <div class="col-xs-6 visible-xs th">DJ</div>
 	    <div class="col-xs-6 col-sm-12">
-	      {% include 'the-fur.html' with data only %}
+	      {% include 'imodium.html' with data only %}
 	    </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="22">
     <div class="col-sm-1 th">22 DI</div>
     <div class="col-sm-2"> {% set data = { id: 26 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -211,7 +213,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="23">
     <div class="col-sm-1 th">23 WO</div>
     <div class="col-sm-2"> {% set data = { id: 31 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -245,7 +247,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="24">
     <div class="col-sm-1 th">24 DO</div>
     <div class="col-sm-2"> {% set data = { id: 36 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -279,7 +281,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="25">
     <div class="col-sm-1 th">25 VR</div>
     <div class="col-sm-2"> {% set data = { id: 41 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -313,7 +315,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="26">
     <div class="col-sm-1 th">26 ZA</div>
     <div class="col-sm-2"> {% set data = { id: 46 } %}
 	    <div class="col-xs-6 visible-xs th">18u</div>
@@ -347,7 +349,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" data-day="27">
     <div class="col-sm-1 th">27 ZO</div>
     <div class="col-sm-2"> {% set data = { id: 51 } %}
       
@@ -373,9 +375,14 @@
     <div class="col-sm-3"> {% set data = { id: 55 } %}
 	    <div class="col-xs-6 visible-xs th">DJ</div>
 	    <div class="col-xs-6 col-sm-12">
-	      {% include 'the-germans.html' with data only %}
+	      {% include 'hewhoforgothehasalzzzheimer.html' with data only %}
 	    </div>
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="assets/js/gentsefeesten.js"></script>
 {% endblock %}
